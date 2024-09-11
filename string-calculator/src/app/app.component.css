@@ -1,0 +1,15 @@
+.string-calculator {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+  
+    input {
+      margin-bottom: 10px;
+    }
+  
+    .error {
+      color: red;
+      font-weight: bold;
+    }
+  }
+  

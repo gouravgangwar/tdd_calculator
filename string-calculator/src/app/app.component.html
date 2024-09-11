@@ -1,0 +1,16 @@
+<div class="string-calculator">
+  <h1>String Calculator</h1>
+
+  <h3><strong>Note :</strong> You can type number like this <strong>1,5,6,18</strong> then press calculate button</h3>
+
+  <form (submit)="calculate($event, input.value); input.value=''">
+    <label for="numbers">Enter numbers (comma or newline delimited):</label>
+    <input type="text" id="numbers" #input>
+    <button type="submit">Calculate</button>
+  </form>
+
+  <div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+  <div *ngIf="!errorMessage">Result: {{ result }}</div>
+</div>
+
+<router-outlet />
